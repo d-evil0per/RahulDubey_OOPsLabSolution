@@ -1,11 +1,4 @@
-/**
- * 
- */
 package com.greatlearning.services;
-/**
- * @author Rahul Dubey
- *
- */
 import com.greatlearning.model.Company;
 import com.greatlearning.model.Employee;
 
@@ -14,26 +7,48 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
 
-
 /**
  * @author Rahul Dubey
  *
  */
 public class CredentialService {
+	
+	/**
+	 * services/CredentailsServices:
+	 * Methods: 
+	 * 	-boolean generateEmailAddress(Employee emp, String departmentName):  to generate the email.
+	 *	-boolean checkemail(String email): to check if user email already exists in that department
+	 *	-void showCredentials(Employee emp): to display the generated Credentials
+	 *	-void generatePassword(Employee emp): to generate password	
+	 */
 
+	
+	/**
+	 * @param Employee class object
+	 * @return 8 char long alphanumeric password
+	 *
+	 */
 	public void generatePassword(Employee emp) {
 		String allowed_char = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$*&";
-		String password = "";
-		Random random = new Random();
 		int password_length = 8;
+		char [] password = new char[password_length];
+		// using the Random class to generate random numbers
+		Random random = new Random();
+		
 		for (int i = 0; i < password_length; i++) {
 			int index = random.nextInt(allowed_char.length());
-			char randomchar = allowed_char.charAt(index);
-			password = password + randomchar;
-			emp.setPassword(password);
+			password[i] = allowed_char.charAt(index);
+			
 		}
+		// setting the employee password
+		emp.setPassword(password.toString());
 	}
 
+	/**
+	 * @param Employee class object 
+	 * @return void
+	 * 
+	 */
 	public void showCredentials(Employee emp) {
 		/*
 		 * 
@@ -58,6 +73,8 @@ public class CredentialService {
 		employee_details.put("department", department);
 		Company.setEmployee_list(employee_details);
 
+		
+		// Printing the credentials to the console
 		System.out.println("Dear " + firstName + " your generated credentials are as follows");
 		System.out.println("Email ---> " + email);
 		System.out.println("Password ---> " + password);
@@ -65,6 +82,11 @@ public class CredentialService {
 
 	}
 
+	/**
+	 * @param String email 
+	 * @return boolean, whether the email exists or not
+	 * 
+	 */
 	public boolean checkemail(String email)
 	{
 		List <HashMap <String,String>> employee_list =Company.getEmployee_list();
@@ -76,6 +98,13 @@ public class CredentialService {
 		}
 		return false;
 	}
+	
+	
+	/**
+	 * @param String departmentName,  Employee class object 
+	 * @return boolean, whether it has exception or not
+	 * 
+	 */
 	public boolean generateEmailAddress(Employee emp, String departmentName) {
 
 		// ex: firstNamelastName@department.company.com
