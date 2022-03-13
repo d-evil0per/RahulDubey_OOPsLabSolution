@@ -10,12 +10,27 @@ package com.greatlearning.model;
 public class Employee extends Company {
 
 	/**
-	 * 
+	 * Data members: 
+	 * 	- String firstName : To store the firstName. 
+	 * 	- String lastName : To store the lastName 
+	 * 	- String email : To store the Email 
+	 * 	- String password : To store the password 
+	 * 	- String department : To store the department
+	 * Parameterized Constructor: to intialize the firstName and lastName
+	 * Methods: 
+	 * 	- String getemp_Department(): getter method for fetching employee department 
+	 * 	- void setemp_Department(String department) : setter method to add employee department 
+	 * 	- String getEmail(): getter method for fetching the employee email 
+	 * 	- void setEmail(String email): setter method to add employee email 
+	 * 	- String getPassword(): getter method to fetch employee password 
+	 * 	- void setPassword(String password): setter method to add employee password 
+	 * 	- String getFirstname():getter method to fetch FirstName 
+	 * 	- String getLastname():getter method to fetch LastName
 	 */
 	private String firstName = "";
 	private String lastName = "";
 	private String email = "";
-	private String password = "";
+	private String password ="";
 	private String emp_department="";
 	
 	public String getemp_Department() {
@@ -35,7 +50,7 @@ public class Employee extends Company {
 	}
 
 	public String getPassword() {
-		return password;
+		return password.toString();
 	}
 
 	public void setPassword(String password) {

@@ -7,6 +7,22 @@ import java.util.*;
  *
  */
 public class Company {
+	
+	/**
+	 * Data members:
+	 * 	String companyName : To store the company Name.
+	 * 	HashMap<String, String> department : To store the key,value pair for Department and it's alias ex: Technical=tech
+	 * 	static List<HashMap<String, String>> employee_list : Class data member to store the list of all employee whose email and password got generated.
+			ex: { FirstName=Rahul, LastName=Dubey, Email=rahuldubey@tech.greatlearning.com, Password=vk*s7BPt, Department=Technical}
+	 * Constructor: to intialize the department Hashmap
+	 * Metchods:
+	 * 	String getCompanyName(): getter method for fetching company name
+	 * 	HashMap<String, String> getDepartment() : getter method for fetching list of Department
+	 * 	static List<HashMap<String, String>> getEmployee_list(): getter method for fetching the records of employee onboarded
+	 * 	void setEmployee_list(HashMap<String, String> employee_list): setter method to add the record of employee
+	 * 	static void getEmployeeDatabase(): getter method to fetch the list of employees
+	 */
+	
 	private String companyName = "greatlearning.com";
 	private HashMap<String, String> department = new HashMap<>();
 	private static List<HashMap<String, String>> employee_list = new ArrayList<HashMap<String, String>>();
