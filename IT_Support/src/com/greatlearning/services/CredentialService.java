@@ -41,7 +41,7 @@ public class CredentialService {
 			
 		}
 		// setting the employee password
-		emp.setPassword(password.toString());
+		emp.setPassword(new String(password));
 	}
 
 	/**
