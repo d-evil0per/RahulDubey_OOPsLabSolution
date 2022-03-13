@@ -130,6 +130,7 @@ public class DriverApplication {
 		 * Added Extra logic to get the Employee Database that we created for all user.
 		 */
 		driver.fetchEmployeeDB();
+		driver.sc.close();
 	}
 
 }
