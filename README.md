@@ -59,30 +59,29 @@ Password ---> 181E@wFT
 - **model/Employee Class**:
 	-  
 	- **Data members**:
-			- **String firstName** : To store the firstName.
-			- **String lastName** : To store the lastName
-			- **String email** : To store the Email
-			- **String password** : To store the password
-			- **String department** : To store the department
-	-	**Parameterized Constructor**: to intialize the firstName and lastName
-	-	**Metchods**: 
-			-	 **String getemp_Department()**:  getter method for fetching  employee department
-			-	 **void setemp_Department(String department)** : setter method to add employee department
-			-	 **String getEmail()**: getter method for fetching the employee email
-			-	 **void setEmail(String email)**: setter method to add employee email
-			-	 **String getPassword()**: getter method to fetch employee password
-			-	**void setPassword(String password)**: setter method to add employee password
-			-	**String getFirstname()**:getter method to fetch FirstName
-			-	**String getLastname()**:getter method to fetch LastName
+		- **String firstName** : To store the firstName.
+		- **String lastName** : To store the lastName
+		- **String email** : To store the Email
+		- **String password** : To store the password
+		- **String department** : To store the department
+	- **Parameterized Constructor**: to intialize the firstName and lastName
+	- **Metchods**: 
+		- **String getemp_Department()**:  getter method for fetching  employee department
+		- **void setemp_Department(String department)** : setter method to add employee department
+		- **String getEmail()**: getter method for fetching the employee email
+		- **void setEmail(String email)**: setter method to add employee email
+		- **String getPassword()**: getter method to fetch employee password
+		- **void setPassword(String password)**: setter method to add employee password
+		- **String getFirstname()**:getter method to fetch FirstName
+		- **String getLastname()**:getter method to fetch LastName
 			
 - **services/CredentailsServices**:
 	- 
-	-	**Metchods**: 
-			-	 **boolean generateEmailAddress(Employee emp, String departmentName)**:  to generate the email.
-			-	 **boolean checkemail(String email)** : to check if user email already exists in that department
-			-	 **void showCredentials(Employee emp)**: to display the generated Credentials
-			-	 **void generatePassword(Employee emp)**: to generate password\
-			-	
+	- **Metchods**: 
+		- **boolean generateEmailAddress(Employee emp, String departmentName)**:  to generate the email.
+		- **boolean checkemail(String email)** : to check if user email already exists in that department
+		- **void showCredentials(Employee emp)**: to display the generated Credentials
+		- **void generatePassword(Employee emp)**: to generate password	
 - **services/ServiceExceptions**:
 	- 
 	- **Data members**:
@@ -94,11 +93,11 @@ Password ---> 181E@wFT
 - **app/DriverApplication**:
 	- 
 	- **Data members**:
-			- **String firstName** : To store the firstName.
-			- **String lastName** : To store the lastName
-			- **Scanner sc** : To get user input using java.util.Scanner; 
-	- 	**Constructor**: to intialize the Scanner sc object for user input
-	-	**Metchods**: 
-			-	**static void main(String[] args)** : Main method to drive the application
-			-	**void fetchEmployeeDB()**:  To fetch the Empolyee List of the company
-			-	**void addCredentials(int option)**:  To generate email,password of the employee
+		- **String firstName** : To store the firstName.
+		- **String lastName** : To store the lastName
+		- **Scanner sc** : To get user input using java.util.Scanner; 
+	- **Constructor**: to intialize the Scanner sc object for user input
+	- **Metchods**: 
+		-	**static void main(String[] args)** : Main method to drive the application
+		-	**void fetchEmployeeDB()**:  To fetch the Empolyee List of the company
+		-	**void addCredentials(int option)**:  To generate email,password of the employee
