@@ -3,7 +3,8 @@ package com.greatlearning.model;
 import java.util.*;
 
 /**
- * @author Rahul Dubey
+ * @author 	Rahul Dubey
+ * @date	03-13-2022
  *
  */
 public class Company {
@@ -52,18 +53,24 @@ public class Company {
 
 	public static void getEmployeeDatabase() {
 		int i = 0;
-		for (HashMap<String, String> record : employee_list) {
-			i++;
-			System.out.println("=============================================");
-			System.out.println("Record number: " + i);
-			for (HashMap.Entry<String, String> entry : record.entrySet()) {
-				System.out.print(entry.getKey() + " ===> ");
-				System.out.print(entry.getValue());
-				System.out.println();
+		if(employee_list.size()>0)
+		{
+			System.out.println();
+			System.out.println("List of onboarded Employees: ");
+			for (HashMap<String, String> record : employee_list) {
+				i++;
+				System.out.println("=============================================");
+				System.out.println("Record number: " + i);
+				for (HashMap.Entry<String, String> entry : record.entrySet()) {
+					System.out.print(entry.getKey() + " ===> ");
+					System.out.print(entry.getValue());
+					System.out.println();
 
+				}
+				System.out.println("=============================================");
 			}
-			System.out.println("=============================================");
 		}
+		
 
 	}
 
