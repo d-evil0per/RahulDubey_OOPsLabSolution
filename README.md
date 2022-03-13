@@ -99,6 +99,6 @@ Password ---> 181E@wFT
 			- **Scanner sc** : To get user input using java.util.Scanner; 
 	- 	**Constructor**: to intialize the Scanner sc object for user input
 	-	**Metchods**: 
-			-	 **static void main(String[] args) **: Main method to drive the application
+			-	**static void main(String[] args)** : Main method to drive the application
 			-	**void fetchEmployeeDB()**:  To fetch the Empolyee List of the company
 			-	**void addCredentials(int option)**:  To generate email,password of the employee
