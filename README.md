@@ -49,7 +49,7 @@ Password ---> 181E@wFT
 		- **static List<HashMap<String, String>> employee_list** : Class data member to store the list of all employee whose email and password got generated.
 			- ex: { FirstName=Rahul, LastName=Dubey, Email=rahuldubey@tech.greatlearning.com, Password=vk*s7BPt, Department=Technical}
 	-	**Constructor**: to intialize the department Hashmap 
-	-	**Metchods**: 
+	-	**Methods**: 
 		-	 **String getCompanyName()**:  getter method for fetching company name
 		-	 **HashMap<String, String> getDepartment()** : getter method for fetching list of Department 
 		-	 **static List<HashMap<String, String>> getEmployee_list()**: getter method for fetching the records of employee onboarded
@@ -65,7 +65,7 @@ Password ---> 181E@wFT
 		- **String password** : To store the password
 		- **String department** : To store the department
 	- **Parameterized Constructor**: to intialize the firstName and lastName
-	- **Metchods**: 
+	- **Methods**: 
 		- **String getemp_Department()**:  getter method for fetching  employee department
 		- **void setemp_Department(String department)** : setter method to add employee department
 		- **String getEmail()**: getter method for fetching the employee email
@@ -77,7 +77,7 @@ Password ---> 181E@wFT
 			
 - **services/CredentailsServices**:
 	- 
-	- **Metchods**: 
+	- **Methods**: 
 		- **boolean generateEmailAddress(Employee emp, String departmentName)**:  to generate the email.
 		- **boolean checkemail(String email)** : to check if user email already exists in that department
 		- **void showCredentials(Employee emp)**: to display the generated Credentials
@@ -97,7 +97,7 @@ Password ---> 181E@wFT
 		- **String lastName** : To store the lastName
 		- **Scanner sc** : To get user input using java.util.Scanner; 
 	- **Constructor**: to intialize the Scanner sc object for user input
-	- **Metchods**: 
+	- **Methods**: 
 		-	**static void main(String[] args)** : Main method to drive the application
 		-	**void fetchEmployeeDB()**:  To fetch the Empolyee List of the company
 		-	**void addCredentials(int option)**:  To generate email,password of the employee
